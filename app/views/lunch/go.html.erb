@@ -1,11 +1,9 @@
 <h1> <%= @recommend.name %> に行け </h1>
-<%= @recommend.address %> /
-
-<%= @recommend.tel %> /
-
-
-
-<%= @recommend.open %> ~
+住所 : <%= @recommend.address %>
+<br><br>
+電話番号 : <%= @recommend.tel %>
+<br><br>
+営業時間 : <%= @recommend.open %> ~
 <%= @recommend.close %>
-(定休日:<%= @recommend.regular_holiday %>)
+(定休日 : <%= @recommend.regular_holiday %>)
 
