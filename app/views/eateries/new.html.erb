@@ -1,0 +1,25 @@
+<%= form_with model: Eatery.new, url: {action: :create}, local: true do |f| %>
+
+<div>
+    <%= f.label :名前 %>
+    <%= f.text_field:name, id:'eatery.name' %>
+    <br>
+    <%= f.label :住所 %>
+    <%= f.text_field:address, id:'eatery.address' %>
+    <br>
+    <%= f.label :電話番号 %>
+    <%= f.text_field:tel, id:'eatery.tel' %>
+    <br>
+    <%= f.label :定休日 %>
+    <%= f.text_field:regular_holiday, id:'eatery.regular_holiday' %>
+    <br>
+    <%= f.label :開店時間 %>
+    <%= f.text_field:open, id:'eatery.open' %>
+    <br>
+    <%= f.label :閉店時間 %>
+    <%= f.text_field:close, id:'eatery.close' %>
+</div>
+<br>
+<%= f.submit %>
+
+<% end %>
